@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:'iransans';
+    src:url('fonts/IRANSansWeb.ttf');
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #f3f3f3;
+    direction: rtl;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    float: right;
+}
+
+.container{
+    width: 1220px;
+    margin: auto;
+}
+
+#top-header{
+    width: 100%;
+    height: 120px;
+    float: right;
+    border-bottom: 1px solid #bbb;
+}
+
+.logo{
+    direction: rtl;
+    float: right;
+}
+
+#logo-img{
+    width: 150px;
+    height:100px;
+    margin: 5px;
+    float: right;
+   /* border: 5px solid;*/
+    box-shadow: 5px;
+    border-radius: 10px 10px;
+}
+
+#logo-text {
+    float: right;
+    margin:10px;
+   font-family: 'IranNastaliq';
+    font-size: 37px;
+    color: #424242;
+}
+
+.search{
+    width: 30%;
+    float: left;
+    padding: 30px;
+}
+
+.search input{
+    padding: 7px 9px;
+    width: 75%;
+    text-align: right;
+    font-family: 'iransans';
+    float: right;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.search button{
+    background-color:#f4f4f4;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    color: #595959;
+    float: right;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+/******************** Top Header ***************/
+
+#menu{
+    width: 100%;
+    height: 50px;
+    float: right;
+    margin: 5px 0;
+}
+
+#main-menu{
+    list-style: none;
+}
+
+#main-menu li{
+    float: right;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    position: relative;
+}
+
+#main-menu li a{
+    padding: 10px 15px;
+    float: right;
+    color: #595959;
+}
+
+#main-menu > li:hover{
+    border: 2px solid #62d7f8;
+    border-radius: 3px;
+}
+
+#main-menu > li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+    transform: rotateY(0deg);
+}
+
+#main-menu li ul{
+    float: right;
+    position: absolute;
+    top: 47px;
+    background-color: #fff;
+    border: 2px solid #62d7f8;
+    border-top: none;
+    width: 100%;
+    left: -2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    margin-top: 45px;
+    transform: rotateY(180deg);
+}
+
+#main-menu li ul li{
+    float: none;
+}
+
+#main-menu li ul li:hover{
+    background-color: #ccc;
+}
+
+#main-menu li ul li a{
+    float: none;
+    display: block;
+    text-align: center;
+}
+/********************** Menu ***************/
+
+#register{
+    float: left;
+    width: 180px;
+    padding: 5px;
+}
+
+#register a{
+    float: left;
+    display: inline-block;
+}
+
+#register a:first-child{
+    border: 2px solid #fc1b1b;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+#register a:first-child:hover{
+    background-color: #ff8484;
+    color: #fff;
+}
+
+#register a:last-child{
+    border: 2px solid #2196F3;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    float: right;
+    background-color: #2196F3;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#register a:last-child:hover{
+    background-color: #fff;
+    color: #444;
+}
+
+/****************** Register *******************/
+
+.main-content{
+    width: 100%;
+    min-height: 500px;
+    float: right;
+    margin: 15px 0;
+}
+
+.sidebar{
+    width: 25%;
+    min-height: 100%;
+    background-color: #fff;
+    float: right;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+
+.left-content{
+    width: 74%;
+    min-height: 100%;
+    float: left;
+}
+
+.slider{
+    width: 100%;
+    height:145px;
+    background-color: aqua;
+    margin-bottom:5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slider img{
+    width: 100%;
+    height:100%;
+    background-color: aqua;
+    margin-bottom:5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slider:hover{
+    box-shadow: 0 0 10px #222;
+}
+
+.content{
+    width: 100%;
+    float: right;
+    direction: rtl;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.content h3{
+    margin: 5px 15px;
+    color: #2b2b2b;
+}
+
+.item{
+    display: inline-block;
+    width: 32%;
+    height: 350px;
+    background-color: #efefef;
+    margin: 5px 4px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item:hover{
+    box-shadow: 0 0 10px #aaa;
+}
+
+.item-img img{
+    width: 100%;
+}
+
+.item-heading{
+    line-height: 165px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+/********************** content********************/
+
+.sidebar-widget{
+    width: 100%;
+    direction: rtl;
+    float: right;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-widget h3{
+    padding: 5px;
+    background-color: #00b2ff;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.news input{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    width: 90%;
+    font-family: 'iransans';
+    margin-bottom: 10px;
+    text-align: center;
+}
+.news button{
+    border: none;
+    padding: 10px 25px;
+    font-family: 'iransans';
+    font-weight: bold;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 3px;
+    display: block;
+    margin: auto ;
+}
+
+.popular ul{
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    width: 95%;
+    margin: auto;
+    
+}
+.popular ul li{
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.popular ul li img{
+    width: 40%;
+    float: right;
+    
+}
+
+.popular ul li h4{
+    float: right;
+    margin-right: 5px;
+    line-height: 60px;
+}
+
+/*******************sidebar***********************/
+
+.pagination{
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.pagination a{
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #6e00bc;
+    transition: 0.3s;
+}
+
+.pagination a:hover{
+    background-color: #00e56e;
+    color: #fff;
+}
+
+/***************content*****************/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #331b40;
+    float: right;
+    color: #fff;
+}
+
+footer .container div{
+    float: right;
+    width: 32%;
+    text-align: center;
+    margin: 5px 8px;
+}
+
+footer .container div h3{
+    border-bottom: 1px dashed #fff;
+    padding: 10px 0px;
+}
+
+.buttom-menu ul{
+    width: 100%;
+}
+
+.buttom-menu ul li a{
+    color: #fff;
+    padding: 2px;
+    display: block;
+    margin: 5px 0;
+    background-color: rgba(255,255,255,0.5)
+}
+
+.social a{
+    color: #fff;
+    font-size: 40px;
+    display: inline-block;
+    margin: 20px 5px;
+}
+ footer p{
+	text-align: center;
+    font-family: "b nazanin";
+    font-size: 20px;
+	margin: 150px 1% 0;
+    background: #331b40;
+}
+
+.about h4{
+    margin-top: 15px
+}
+
+/*****************Page Aboutus*************/
+#auh{
+    text-align: center;
+    color:blue;
+    font-family: "b titr"
+} 
+#aup{
+    
+    font-family: "b traffic";
+    font-size: 20px;
+    text-align:justify;
+    margin: 0px 10px 0px 10px;
+ }
+#aui{
+    border-bottom: 
+}
+#abexit{
+    float: left;
+    width: 180px;
+    padding: 5px;
+}
+
+#abexit a{
+    float: left;
+    display: inline-block;
+}
+
+#abexit a:first-child{
+    border: 2px solid #fc1b1b;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+#abexit a:first-child:hover{
+    background-color: #ff8484;
+    color: #fff;
+}
+
+#abexit a:last-child{
+    border: 2px solid #2196F3;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    float: right;
+    background-color: #2196F3;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#abexit a:last-child:hover{
+    background-color: #fff;
+    color: #444;
+}
+/*****************Page Telus*************/
+#tuh{
+    text-align: center;
+    color:orange;
+    font-family: "b titr"
+}
+#tup{
+    
+    font-family: "b traffic";
+    font-size: 20px;
+    text-align:center;
+    margin: 0px 15px 0px 15px;
+}
+#texit{
+    float: left;
+    width: 180px;
+    padding: 5px;
+}
+
+#texit a{
+    float: left;
+    display: inline-block;
+}
+
+#texit a:first-child{
+    border: 2px solid #fc1b1b;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+#texit a:first-child:hover{
+    background-color: #ff8484;
+    color: #fff;
+}
+
+#texit a:last-child{
+    border: 2px solid #2196F3;
+    color: #444;
+    border-radius: 4px;
+    padding: 5px 20px;
+    float: right;
+    background-color: #3096F3;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#texit a:last-child:hover{
+    background-color: #fff;
+    color: #444;
+}
+
